@@ -1,4 +1,3 @@
-
 const inputs = document.querySelector(".inputs"),
 hintTag = document.querySelector(".hint span"),
 guessLeft = document.querySelector(".guess-left span"),
@@ -9,7 +8,7 @@ let word, maxGuesses, incorrectLetters = [], correctLetters = [];
 function randomWord() {
     let ranItem = wordList[Math.floor(Math.random() * wordList.length)];
     word = ranItem.word;
-    maxGuesses = word.length >= 5 ? 8 : 6;
+    maxGuesses = 3;
     correctLetters = []; incorrectLetters = [];
     hintTag.innerText = ranItem.hint;
     guessLeft.innerText = maxGuesses;
@@ -41,7 +40,7 @@ function initGame(e) {
     typingInput.value = "";
     setTimeout(() => {
         if(correctLetters.length === word.length) {
-            alert(`Congrats! You found the word ${word.toUpperCase()}`);
+            alert(`Congrats your found the player George Gervin! \n\n George Gervin, nicknamed "the Iceman", is an American former professional basketball player who played in both the American Basketball Association and National Basketball Association for the Virginia Squires, San Antonio Spurs, and Chicago Bulls.`);
             return randomWord();
         } else if(maxGuesses < 1) {
             alert("Game over! You don't have remaining guesses");
