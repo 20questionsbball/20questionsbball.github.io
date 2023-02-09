@@ -11,7 +11,7 @@ body{
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: cyan;
+  background-color: rgb(255, 255, 255);
 }
 .wrapper{
   width: 430px;
@@ -106,3 +106,4 @@ body{
     top: auto;
   }
 }
+
