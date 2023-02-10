@@ -6,18 +6,19 @@
 }
 
 body{
-  display: flex;
+  display:flex;
   padding: 0 10px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 68, 239, 0.729);
 }
+
 .wrapper{
   width: 430px;
-  background: rgb(220, 215, 240);
+  background: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(112, 91, 91, 0.1);
 }
 .wrapper h1{
   font-size: 25px;
@@ -41,11 +42,11 @@ body{
   font-weight: 500;
   color: #202826;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 1px;
   background: none;
   pointer-events: none;
   text-transform: uppercase;
-  border: 1px solid #B5B5B5;
+  border: 5px solid #B5B5B5;
 }
 .typing-input {
   opacity: 0;
@@ -76,7 +77,7 @@ body{
   transition: all 0.3s ease;
 }
 .content .reset-btn:hover{
-  background: #18a589;
+  background: #2118a5;
 }
 @media screen and (max-width: 460px) {
   .wrapper {
@@ -105,5 +106,10 @@ body{
   .h7 {
     top: auto;
   }
+}
+
+footer {
+  padding:15px;
+  text-align: center;
 }
 
